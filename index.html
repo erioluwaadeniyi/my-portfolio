@@ -1,0 +1,1610 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Adeniyi Erioluwa | Software Engineer & Ads Manager</title>
+
+
+  <!-- Devicon -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  >
+
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+
+  <!-- Google Font -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  min-height: 100vh;
+
+  background: #050507;
+
+  color: #f5f5f7;
+
+  font-family: "Inter", sans-serif;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 80px;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 4.5%;
+
+  border-bottom: 1px solid #1a1a20;
+
+  background: rgba(5, 5, 7, 0.9);
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+  backdrop-filter: blur(15px);
+}
+
+
+/* LOGO */
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+.logo-mark {
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #33333d;
+
+  border-radius: 10px;
+
+  font-size: 18px;
+
+  font-weight: 800;
+
+  background: #111116;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 38px;
+}
+
+
+.nav-links a {
+  color: #8f8f99;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  transition: 0.25s ease;
+
+  position: relative;
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: white;
+}
+
+
+.nav-links a.active::after {
+  content: "";
+
+  position: absolute;
+
+  width: 5px;
+
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #9d5cff;
+
+  bottom: -12px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+
+/* THEME BUTTON */
+
+.theme-btn {
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  border: 1px solid #292932;
+
+  background: #111116;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  width: 90%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  min-height: 640px;
+
+  display: grid;
+
+  grid-template-columns: 45% 55%;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 70px 0 45px;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.hero-left {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  border-right: 1px solid #24242c;
+
+  padding-right: 50px;
+}
+
+
+/* PROFILE */
+
+.profile-wrapper {
+  width: 430px;
+
+  height: 430px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* OUTER RING */
+
+.profile-ring {
+  position: absolute;
+
+  width: 450px;
+
+  height: 450px;
+
+  border-radius: 50%;
+
+  border: 1px solid #303039;
+
+  border-right-color: #965cff;
+
+  transform: rotate(-25deg);
+}
+
+
+/* PROFILE IMAGE */
+
+.profile-image {
+  width: 410px;
+
+  height: 410px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 1px solid #34343d;
+
+  background: #101014;
+}
+
+
+/* AVAILABILITY */
+
+.availability {
+  position: absolute;
+
+  bottom: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 13px 20px;
+
+  background: rgba(15, 15, 19, 0.95);
+
+  border: 1px solid #34343d;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+
+  color: #dedee3;
+
+  backdrop-filter: blur(10px);
+}
+
+
+.status-dot {
+  width: 9px;
+
+  height: 9px;
+
+  background: #28df83;
+
+  border-radius: 50%;
+
+  box-shadow: 0 0 12px rgba(40, 223, 131, 0.5);
+}
+
+
+/* SOCIALS */
+
+.socials {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-top: 38px;
+}
+
+
+.socials a {
+  color: #d4d4da;
+
+  text-decoration: none;
+
+  font-size: 22px;
+
+  transition: 0.25s ease;
+}
+
+
+.socials a:hover {
+  color: #9d5cff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.hero-right {
+  padding-left: 20px;
+
+  max-width: 650px;
+}
+
+
+/* EYEBROW */
+
+.eyebrow {
+  color: #a667ff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+
+/* NAME */
+
+.hero-right h1 {
+  font-size: clamp(60px, 6vw, 88px);
+
+  line-height: 0.98;
+
+  letter-spacing: -4px;
+
+  font-weight: 800;
+
+  margin-bottom: 25px;
+}
+
+
+.hero-right h1 span {
+  display: block;
+
+  background: linear-gradient(
+    90deg,
+    #b35cff,
+    #776dff,
+    #299eff
+  );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ROLE */
+
+.hero-right h2 {
+  font-size: 15px;
+
+  font-weight: 500;
+
+  letter-spacing: 4px;
+
+  color: #c2c2ca;
+
+  line-height: 1.7;
+}
+
+
+.hero-right h2 span {
+  color: #855cff;
+}
+
+
+/* LINE */
+
+.line {
+  width: 65px;
+
+  height: 2px;
+
+  margin: 18px 0 28px;
+
+  background: linear-gradient(
+    90deg,
+    #a65cff,
+    transparent
+  );
+}
+
+
+/* DESCRIPTION */
+
+.description {
+  max-width: 590px;
+
+  color: #96969f;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  margin-bottom: 14px;
+}
+
+
+/* =========================
+   CURRENT FOCUS
+========================= */
+
+.focus {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin: 27px 0;
+}
+
+
+.focus-icon {
+  width: 43px;
+
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border: 1px solid #4c376e;
+
+  color: #a667ff;
+
+  font-size: 18px;
+}
+
+
+.focus div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.focus span {
+  font-size: 12px;
+
+  color: #888892;
+}
+
+
+.focus strong {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #dddde3;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+
+.btn {
+  min-width: 190px;
+
+  padding: 16px 23px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+
+.btn.primary {
+  color: white;
+
+  background: linear-gradient(
+    100deg,
+    #965cff,
+    #248ff5
+  );
+
+  box-shadow: 0 10px 35px rgba(111, 76, 255, 0.18);
+}
+
+
+.btn.primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 40px rgba(111, 76, 255, 0.3);
+}
+
+
+.btn.secondary {
+  color: white;
+
+  border: 1px solid #373741;
+
+  background: #0b0b0f;
+}
+
+
+.btn.secondary:hover {
+  border-color: #7550a8;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   STACK
+========================= */
+
+.stack-section {
+  width: 90%;
+
+  max-width: 1250px;
+
+  margin: 20px auto 70px;
+
+  padding: 30px 35px 35px;
+
+  border: 1px solid #282830;
+
+  border-radius: 18px;
+
+  background: rgba(10, 10, 14, 0.6);
+}
+
+
+/* STACK HEADING */
+
+.stack-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 30px;
+}
+
+
+.stack-heading span {
+  color: #a667ff;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  font-weight: 600;
+}
+
+
+.stack-heading div {
+  height: 1px;
+
+  flex: 1;
+
+  background: #22222a;
+}
+
+
+/* GRID */
+
+.stack-grid {
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+}
+
+
+/* TECHNOLOGY */
+
+.tech {
+  min-height: 105px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  border-right: 1px solid #24242b;
+
+  transition: 0.25s ease;
+}
+
+
+.tech:nth-child(7),
+.tech:nth-child(14) {
+  border-right: none;
+}
+
+
+.tech:hover {
+  background: #111117;
+}
+
+
+.tech i {
+  font-size: 38px;
+}
+
+
+.tech span {
+  font-size: 12px;
+
+  color: #a5a5ae;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* =========================
+   SPECIAL ICONS
+========================= */
+
+.special-icon {
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  color: white;
+
+  border-radius: 8px;
+
+  background: #111116;
+
+  border: 1px solid #33333d;
+}
+
+
+.hugging-face {
+  color: #ffd21e;
+
+  font-size: 26px;
+}
+
+
+.reddit {
+  color: #ff4500;
+
+  font-size: 28px;
+}
+
+
+.meta {
+  color: #0866ff;
+
+  font-size: 27px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .nav-links {
+    gap: 20px;
+  }
+
+
+  .hero {
+    grid-template-columns: 40% 60%;
+  }
+
+
+  .profile-wrapper {
+    width: 330px;
+
+    height: 330px;
+  }
+
+
+  .profile-image {
+    width: 310px;
+
+    height: 310px;
+  }
+
+
+  .profile-ring {
+    width: 350px;
+
+    height: 350px;
+  }
+
+
+  .hero-right h1 {
+    font-size: 65px;
+  }
+
+
+  .stack-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+
+  .tech {
+    border-bottom: 1px solid #24242b;
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .hero {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    padding-top: 50px;
+  }
+
+
+  .hero-left {
+    border-right: none;
+
+    padding-right: 0;
+  }
+
+
+  .hero-right {
+    padding-left: 0;
+
+    max-width: 700px;
+
+    margin: auto;
+  }
+
+
+  .hero-right h1 {
+    font-size: 65px;
+  }
+
+
+  .line {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+
+  .description {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+
+  .focus {
+    justify-content: center;
+  }
+
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+
+  .stack-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+
+  .logo span {
+    display: none;
+  }
+
+
+  .theme-btn {
+    width: 36px;
+
+    height: 36px;
+  }
+
+
+  .hero {
+    width: 88%;
+
+    padding-top: 35px;
+  }
+
+
+  .profile-wrapper {
+    width: 270px;
+
+    height: 270px;
+  }
+
+
+  .profile-image {
+    width: 250px;
+
+    height: 250px;
+  }
+
+
+  .profile-ring {
+    width: 285px;
+
+    height: 285px;
+  }
+
+
+  .availability {
+    font-size: 11px;
+
+    padding: 10px 15px;
+  }
+
+
+  .socials {
+    margin-top: 30px;
+  }
+
+
+  .hero-right {
+    margin-top: 35px;
+  }
+
+
+  .hero-right h1 {
+    font-size: 52px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .hero-right h2 {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .description {
+    font-size: 14px;
+  }
+
+
+  .focus {
+    text-align: left;
+  }
+
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+
+  .btn {
+    width: 100%;
+  }
+
+
+  .stack-section {
+    width: 92%;
+
+    padding: 25px 15px;
+  }
+
+
+  .stack-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  .tech {
+    min-height: 90px;
+  }
+
+
+  .tech i {
+    font-size: 30px;
+  }
+
+
+  .tech span {
+    font-size: 10px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="navbar">
+
+
+  <a
+    href="index.html"
+    class="logo"
+  >
+
+    <div class="logo-mark">
+      A
+    </div>
+
+    <span>
+      Adeniyi Erioluwa
+    </span>
+
+  </a>
+
+
+  <nav class="nav-links">
+
+    <a
+      href="index.html"
+      class="active"
+    >
+      Home
+    </a>
+
+    <a href="about.html">
+      About
+    </a>
+
+    <a href="projects.html">
+      Projects
+    </a>
+
+    <a href="experience.html">
+      Experience
+    </a>
+
+    <a href="skills.html">
+      Skills
+    </a>
+
+    <a href="contact.html">
+      Contact
+    </a>
+
+  </nav>
+
+
+  <button
+    class="theme-btn"
+    aria-label="Toggle theme"
+  >
+    ◐
+  </button>
+
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
+
+
+<section class="hero">
+
+
+  <!-- LEFT -->
+
+  <div class="hero-left">
+
+
+    <div class="profile-wrapper">
+
+
+      <div class="profile-ring"></div>
+
+
+      <!-- Replace with your photo -->
+
+      <img
+        src="profile.jpeg"
+        alt="Adeniyi Erioluwa"
+        class="profile-image"
+      >
+
+
+      <div class="availability">
+
+        <span class="status-dot"></span>
+
+        Available for work
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- SOCIALS -->
+
+    <div class="socials">
+
+
+      <a
+        href="https://github.com/erioluwaadeniyi"
+        aria-label="GitHub"
+      >
+
+        <i class="fa-brands fa-github"></i>
+
+      </a>
+
+
+      <a
+        href="http://www.linkedin.com/in/erioluwa-adeniyi"
+        aria-label="LinkedIn"
+      >
+
+        <i class="fa-brands fa-linkedin"></i>
+
+      </a>
+
+
+      <a
+        href="https://www.reddit.com/user/erioluwa_adeniyi_344/"
+        aria-label="Reddit"
+      >
+
+        <i class="fa-brands fa-reddit-alien"></i>
+
+      </a>
+
+
+      <a
+        href="erioluwaadeniyi06@gmail.com"
+        aria-label="Email"
+      >
+
+        <i class="fa-solid fa-envelope"></i>
+
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- RIGHT -->
+
+  <div class="hero-right">
+
+
+    <p class="eyebrow">
+
+      HELLO, I'M 👋
+
+    </p>
+
+
+    <h1>
+
+      Adeniyi
+
+      <span>
+        Erioluwa
+      </span>
+
+    </h1>
+
+
+    <h2>
+
+      SOFTWARE ENGINEER
+      <span>&</span>
+      BUILDER
+      <span>&</span>
+      META ADS MANAGER
+
+    </h2>
+
+
+    <div class="line"></div>
+
+
+    <p class="description">
+
+      I'm a Software Engineering student and
+      technology builder interested in creating
+      useful digital products, solving real-world
+      problems and continuously improving my
+      technical skills.
+
+    </p>
+
+
+    <p class="description">
+
+      Alongside software development, I also work
+      as a Meta Ads Manager, working with digital
+      advertising campaigns and helping businesses
+      reach the right audience.
+
+    </p>
+
+
+
+    <!-- CURRENT FOCUS -->
+
+    <div class="focus">
+
+
+      <div class="focus-icon">
+
+        <i class="fa-solid fa-bullseye"></i>
+
+      </div>
+
+
+      <div>
+
+        <span>
+          Currently focusing on
+        </span>
+
+        <strong>
+          Software Development & Meta Ads Management
+        </strong>
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- BUTTONS -->
+
+    <div class="hero-buttons">
+
+
+      <a
+        href="projects.html"
+        class="btn primary"
+      >
+
+        View Projects
+
+        <span>
+          →
+        </span>
+
+      </a>
+
+
+      <a
+        href="contact.html"
+        class="btn secondary"
+      >
+
+        Contact Me
+
+        <span>
+          ✉
+        </span>
+
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     STACK
+========================= -->
+
+<section class="stack-section">
+
+
+  <div class="stack-heading">
+
+    <span>
+      MY STACK
+    </span>
+
+    <div></div>
+
+  </div>
+
+
+
+  <div class="stack-grid">
+
+
+    <!-- HTML -->
+
+    <div class="tech">
+
+      <i class="devicon-html5-plain colored"></i>
+
+      <span>
+        HTML
+      </span>
+
+    </div>
+
+
+    <!-- CSS -->
+
+    <div class="tech">
+
+      <i class="devicon-css3-plain colored"></i>
+
+      <span>
+        CSS
+      </span>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <div class="tech">
+
+      <i class="devicon-javascript-plain colored"></i>
+
+      <span>
+        JavaScript
+      </span>
+
+    </div>
+
+
+    <!-- Python -->
+
+    <div class="tech">
+
+      <i class="devicon-python-plain colored"></i>
+
+      <span>
+        Python
+      </span>
+
+    </div>
+
+
+    <!-- Figma -->
+
+    <div class="tech">
+
+      <i class="devicon-figma-plain colored"></i>
+
+      <span>
+        Figma
+      </span>
+
+    </div>
+
+
+    <!-- React -->
+
+    <div class="tech">
+
+      <i class="devicon-react-original colored"></i>
+
+      <span>
+        React
+      </span>
+
+    </div>
+
+
+    <!-- Bootstrap -->
+
+    <div class="tech">
+
+      <i class="devicon-bootstrap-plain colored"></i>
+
+      <span>
+        Bootstrap
+      </span>
+
+    </div>
+
+
+    <!-- Laravel -->
+
+    <div class="tech">
+
+      <i class="devicon-laravel-plain colored"></i>
+
+      <span>
+        Laravel
+      </span>
+
+    </div>
+
+
+    <!-- PHP -->
+
+    <div class="tech">
+
+      <i class="devicon-php-plain colored"></i>
+
+      <span>
+        PHP
+      </span>
+
+    </div>
+
+
+    <!-- MySQL -->
+
+    <div class="tech">
+
+      <i class="devicon-mysql-plain colored"></i>
+
+      <span>
+        MySQL
+      </span>
+
+    </div>
+
+
+    <!-- SQLite -->
+
+    <div class="tech">
+
+      <i class="devicon-sqlite-plain colored"></i>
+
+      <span>
+        SQLite
+      </span>
+
+    </div>
+
+
+    <!-- Git -->
+
+    <div class="tech">
+
+      <i class="devicon-git-plain colored"></i>
+
+      <span>
+        Git
+      </span>
+
+    </div>
+
+
+    <!-- GitHub -->
+
+    <div class="tech">
+
+      <i class="devicon-github-original"></i>
+
+      <span>
+        GitHub
+      </span>
+
+    </div>
+
+
+    <!-- Hugging Face -->
+
+    <div class="tech">
+
+      <div class="special-icon hugging-face">
+        🤗
+      </div>
+
+      <span>
+        Hugging Face
+      </span>
+
+    </div>
+
+
+    <!-- Reddit -->
+
+    <div class="tech">
+
+      <div class="special-icon reddit">
+
+        <i class="fa-brands fa-reddit-alien"></i>
+
+      </div>
+
+      <span>
+        Reddit
+      </span>
+
+    </div>
+
+
+    <!-- Meta Ads Manager -->
+
+    <div class="tech">
+
+      <div class="special-icon meta">
+
+        <i class="fa-brands fa-meta"></i>
+
+      </div>
+
+      <span>
+        Meta Ads Manager
+      </span>
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+</main>
+
+
+</body>
+
+</html>

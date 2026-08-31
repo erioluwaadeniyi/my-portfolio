@@ -1,0 +1,847 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Experience | Adeniyi Erioluwa</title>
+
+
+  <!-- Devicon -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  >
+
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+
+  <!-- Google Font -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+
+  background: #050507;
+
+  color: #f5f5f7;
+
+  font-family: "Inter", sans-serif;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 80px;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 4.5%;
+
+  border-bottom: 1px solid #1a1a20;
+
+  background: rgba(5, 5, 7, 0.9);
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+  backdrop-filter: blur(15px);
+}
+
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+.logo-mark {
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #33333d;
+
+  border-radius: 10px;
+
+  font-size: 18px;
+
+  font-weight: 800;
+
+  background: #111116;
+}
+
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 38px;
+}
+
+
+.nav-links a {
+  color: #8f8f99;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  transition: 0.25s ease;
+
+  position: relative;
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: white;
+}
+
+
+.nav-links a.active::after {
+  content: "";
+
+  position: absolute;
+
+  width: 5px;
+
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #9d5cff;
+
+  bottom: -12px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+
+.theme-btn {
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  border: 1px solid #292932;
+
+  background: #111116;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+  width: 90%;
+
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  padding: 90px 0;
+}
+
+
+.page-label {
+  color: #a667ff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+
+.experience h1 {
+  font-size: clamp(50px, 7vw, 80px);
+
+  line-height: 1;
+
+  letter-spacing: -4px;
+
+  margin-bottom: 20px;
+}
+
+
+.experience h1 span {
+  background: linear-gradient(
+    90deg,
+    #b35cff,
+    #776dff,
+    #299eff
+  );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+.intro {
+  max-width: 680px;
+
+  color: #96969f;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  margin-bottom: 55px;
+}
+
+
+/* =========================
+   EXPERIENCE CARD
+========================= */
+
+.experience-card {
+  display: grid;
+
+  grid-template-columns: 220px 1fr;
+
+  gap: 35px;
+
+  padding: 35px;
+
+  border: 1px solid #282830;
+
+  border-radius: 16px;
+
+  background: #0a0a0e;
+
+  transition: 0.3s ease;
+}
+
+
+.experience-card:hover {
+  border-color: #513878;
+
+  background: #0d0d12;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.experience-date {
+  color: #888892;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+.current {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 12px;
+
+  padding: 7px 11px;
+
+  border: 1px solid #244936;
+
+  border-radius: 20px;
+
+  color: #65d99b;
+
+  font-size: 11px;
+
+  background: #0b1510;
+}
+
+
+.current-dot {
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #28df83;
+
+  box-shadow: 0 0 8px rgba(40, 223, 131, 0.5);
+}
+
+
+/* =========================
+   EXPERIENCE CONTENT
+========================= */
+
+.experience-content {
+  border-left: 1px solid #24242c;
+
+  padding-left: 35px;
+}
+
+
+.experience-content h2 {
+  font-size: 25px;
+
+  margin-bottom: 8px;
+}
+
+
+.experience-content h3 {
+  color: #a667ff;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  margin-bottom: 22px;
+}
+
+
+.experience-content p {
+  color: #96969f;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+  max-width: 700px;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   RESPONSIBILITIES
+========================= */
+
+.responsibilities {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+
+.responsibility {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 15px;
+
+  border: 1px solid #24242c;
+
+  border-radius: 9px;
+
+  background: #0b0b0f;
+}
+
+
+.responsibility i {
+  color: #a667ff;
+
+  font-size: 12px;
+
+  margin-top: 4px;
+}
+
+
+.responsibility span {
+  color: #a5a5ae;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   OTHER EXPERIENCE
+========================= */
+
+.other-title {
+  margin-top: 55px;
+
+  margin-bottom: 20px;
+
+  color: #a667ff;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+}
+
+
+.learning-card {
+  padding: 28px 30px;
+
+  border: 1px solid #282830;
+
+  border-radius: 16px;
+
+  background: #0a0a0e;
+}
+
+
+.learning-card h2 {
+  font-size: 19px;
+
+  margin-bottom: 12px;
+}
+
+
+.learning-card p {
+  color: #96969f;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .experience {
+    padding: 60px 0;
+  }
+
+
+  .experience-card {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+
+  .experience-content {
+    border-left: none;
+
+    border-top: 1px solid #24242c;
+
+    padding-left: 0;
+
+    padding-top: 25px;
+  }
+
+
+  .responsibilities {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+
+  .logo span {
+    display: none;
+  }
+
+
+  .theme-btn {
+    width: 36px;
+
+    height: 36px;
+  }
+
+
+  .experience {
+    width: 88%;
+
+    padding: 50px 0;
+  }
+
+
+  .experience h1 {
+    font-size: 52px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .intro {
+    font-size: 14px;
+  }
+
+
+  .experience-card {
+    padding: 24px;
+  }
+
+
+  .experience-content h2 {
+    font-size: 21px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="navbar">
+
+
+  <a
+    href="index.html"
+    class="logo"
+  >
+
+    <div class="logo-mark">
+      A
+    </div>
+
+    <span>
+      Adeniyi Erioluwa
+    </span>
+
+  </a>
+
+
+  <nav class="nav-links">
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="about.html">
+      About
+    </a>
+
+    <a href="projects.html">
+      Projects
+    </a>
+
+    <a
+      href="experience.html"
+      class="active"
+    >
+      Experience
+    </a>
+
+    <a href="skills.html">
+      Skills
+    </a>
+
+    <a href="contact.html">
+      Contact
+    </a>
+
+  </nav>
+
+
+  <button
+    class="theme-btn"
+    aria-label="Toggle theme"
+  >
+    ◐
+  </button>
+
+</header>
+
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<main>
+
+<section class="experience">
+
+
+  <p class="page-label">
+    EXPERIENCE
+  </p>
+
+
+  <h1>
+    Where I've
+    <span>Worked.</span>
+  </h1>
+
+
+  <p class="intro">
+
+    My professional experience across technology,
+    digital advertising and building digital solutions.
+
+  </p>
+
+
+
+  <!-- =========================
+       CURRENT EXPERIENCE
+  ========================= -->
+
+  <article class="experience-card">
+
+
+    <!-- DATE -->
+
+    <div class="experience-date">
+
+      <strong>
+        Aug 1, 2026
+      </strong>
+
+      <br>
+
+      Present
+
+
+      <div class="current">
+
+        <span class="current-dot"></span>
+
+        Current Role
+
+      </div>
+
+    </div>
+
+
+
+    <!-- CONTENT -->
+
+    <div class="experience-content">
+
+
+      <h2>
+        Meta Ads Manager
+      </h2>
+
+
+      <h3>
+        Pronext Manpower
+      </h3>
+
+
+      <p>
+
+        Currently working as a Meta Ads Manager,
+        managing advertising campaigns and helping
+        businesses reach their target audiences
+        through Meta's advertising platforms.
+
+      </p>
+
+
+      <div class="responsibilities">
+
+
+        <div class="responsibility">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Managing Meta advertising campaigns
+          </span>
+
+        </div>
+
+
+        <div class="responsibility">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Creating and managing ad campaigns
+          </span>
+
+        </div>
+
+
+        <div class="responsibility">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Monitoring campaign performance
+          </span>
+
+        </div>
+
+
+        <div class="responsibility">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Audience targeting and campaign optimization
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </article>
+
+
+
+  <!-- =========================
+       DEVELOPMENT
+  ========================= -->
+
+  <p class="other-title">
+    DEVELOPMENT
+  </p>
+
+
+  <div class="learning-card">
+
+
+    <h2>
+      Software Engineering
+    </h2>
+
+
+    <p>
+
+      Alongside my professional work, I continue to
+      develop my skills in software engineering,
+      building web applications and experimenting
+      with different technologies and digital product
+      ideas.
+
+    </p>
+
+
+  </div>
+
+
+</section>
+
+</main>
+
+
+</body>
+
+</html>
