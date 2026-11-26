@@ -343,6 +343,28 @@ body {
 }
 
 
+.project-status {
+  padding: 6px 9px;
+  border: 1px solid #292932;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  white-space: nowrap;
+}
+
+.project-status.development {
+  color: #ffc36b;
+  border-color: #5a4328;
+  background: #1a140d;
+}
+
+.project-status.live {
+  color: #75dfa8;
+  border-color: #28513b;
+  background: #0d1912;
+}
+
 .project-number {
   color: #555560;
 
@@ -860,12 +882,12 @@ body {
       <div>
         <div class="project-top">
           <span class="project-number">PROJECT 01</span>
+          <span class="project-status development">IN DEVELOPMENT</span>
           <div class="project-icon"><i class="fa-solid fa-graduation-cap"></i></div>
         </div>
         <h2>GradeLock</h2>
         <p>
-          An AI-powered learning platform built to help students prepare for exams,
-          practice questions and strengthen their understanding through guided study.
+          An AI-powered learning platform currently in development, designed to help students prepare for exams, practice questions and strengthen their understanding through guided study.
         </p>
         <div class="project-tech">
           <span>React</span>
@@ -891,6 +913,7 @@ body {
       <div>
         <div class="project-top">
           <span class="project-number">PROJECT 02</span>
+          <span class="project-status live">LIVE</span>
           <div class="project-icon"><i class="fa-solid fa-wallet"></i></div>
         </div>
         <h2>FinBro</h2>
@@ -928,6 +951,7 @@ body {
           <span class="project-number">
             PROJECT 03
           </span>
+          <span class="project-status live">LIVE</span>
 
           <div class="project-icon">
 
@@ -1045,6 +1069,7 @@ body {
           <span class="project-number">
             PROJECT 04
           </span>
+          <span class="project-status live">LIVE</span>
 
           <div class="project-icon">
 
